@@ -623,47 +623,17 @@ footer {
   .grid-container {
     display:none;
   }
-  .parallax {
-    /* The image used */
-  background-image: url(https://db3pap002files.storage.live.com/y4m1TW305PM9NW5hG8ZdIJwLHIAZHE8_K3KSu2MofAXw3v3hk4P0vzU7qIyAUKez938iyQvZcNDuNjTKEiJ2khI-e_uoCZW6KD0_5ZAIVlVCAnBAHBDkK8Ry2F6VGGKacTVrHDjWCWsDneyM--Q5QVaSrX05bQ9PEsex66iB-tETEiyjCRrPSZZJChPu-N5NFMd-v2rDC0PN6yJvT9Arulzp9uefbgdwpYR643Ehqgxhhc?encodeFailures=1&width=850&height=565);
-  
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
+  .parallax img {
+    height: 300px;
+    width: 100%;
   }
-  .parallax1 {
-    /* The image used */
-  background-image: url(https://db3pap002files.storage.live.com/y4mklo1J6QVQKqlNnclzdELwtrRKFfRyUYNNcWOfxNKxqRHUU9-8GKdvfjogS3ZCDRnqaBQwogRk7sQnFfWiLAMR5oC4tLd4SrdYPW44iNtjL9LiXL3arrWk5mk5XEpUlaT3YzdkG1bo-jDpWZCwLEjG6q_iyQRwnIxlCTus5ukSX6ffYBoXVihNCi6ARyJyr8edq6KvswjnMFtfbxea_jnMb_U_J4rwA4znPNl77oVw7Y?encodeFailures=1&width=1175&height=782);
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
+  .parallax1 img {
+    height: 300px;
+    width: 100%;
   }
-  .parallax2 {
-    /* The image used */
-    background-image: url(https://public.db.files.1drv.com/y4mSfV9CUYsEyj2h-oQ2byKa3MhbQV8u-pxyCoEnE64wDWjDJCuSIGaMf5ohE6I0FjDb_IncAfaSj_Z4LTTEyjrMv7S2bGboovCVdYshxLCAtw_6u4wI9dgZN0e5WLVNRFY5DcMYDJD7uNeclKaZYE2YSQfcjkN7ey0Clz9Y-tFp9mEgyc0Z1kEnD7OpIN7uO5-SR8E6kgVIiZkDhTNwVvCiHEzM8BCOkrwoVa6ZTgBZfE?encodeFailures=1&width=1920&height=782);
-    /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
+  .parallax2 img{
+   height: 300px;
+    width: 100%;
   }
   .description {
     text-align: center;
