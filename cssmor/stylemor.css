@@ -712,14 +712,16 @@ footer {
     grid-template-columns: auto;
     column-gap: 50px;
     margin: 0px 0px 20px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
   }
   .grid-container-menu .fish {
     display: grid;
     grid-template-columns: auto;
     column-gap: 50px;
     margin: 0px 0px 20px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
   }
 }
 /*end menu page code*/
