@@ -59,44 +59,61 @@ body {
   .navbar-links ul li .menu_item a:hover {
    font-size: 23px;
   }
-  /*homepage slogan*/
-  #homepageslogan {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F2F2F2;
-    color: #17284B;
-    text-align: center;
-    font-size: 35px;
-    letter-spacing: 10px;
-    padding-top: 25px;
-  }
-@media screen and (min-width: 768px) {
-  #homeimg {
-    padding: 25px 150px 50px 150px;
+  /*start homepage code*/
+  .bg1 {
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/terrazza_2rid.jpg");
+  background-attachment: fixed; 
+  background-size: 100% 100%;
 }
+  .slogan{
+    font-family: 'Cinzel', san-serif;
+    color: #F2F2F2;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  .linea-blu {
+    width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 25px;
+}
+.home_container {
+  margin:50px;
+}
+.home_row {
+  display: flex; 
+  flex-direction: row;
+   column-gap: 50px;
+}
+.col-sm-4 {
+  width:33.33333333%;
+}
+.bg2 {
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/0043 Moranorid.jpg"); 
+  background-size: 100% 100%;
+  margin-bottom: 5px;
 }
 
-#empty-space {
-  height: 20px;
-  background-color: #F2F2F2;
-}
+/*end homepage code*/
+/* startfooter code*/
 footer {
     background-color: #17284B;
     color: #F2F2F2;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
  }
- .row {
-  padding: 30px;
- }
- .row::after {
-  content: "";
-  clear: both;
-  display: table;
+ .rowfoot {
+  padding: 20px;
+  display: flex;
 }
- .col-4 {
+ .colfoot-4 {
   width: 33.33%;
   float: left;
-
  }
  .sign_iva {
   background-color: #F2F2F2;
@@ -107,7 +124,9 @@ footer {
  }
  .sign_iva {
   font-size: 10px;
+  padding-left: 10px;
  }
+ /* end footer code */
 @media screen and (max-width: 768px) {
   header {
     background-color: #17284B;
@@ -119,6 +138,7 @@ footer {
   background-color: #17284B;
   color: #F2F2F2;
   flex-direction: column;
+  padding-bottom: 5px;
 }
 .brand-title {
     font-family: 'Cinzel decorative', cursive;
@@ -156,44 +176,15 @@ footer {
   border: solid;
   border-radius: 0%;
   }
-  /*empty space for mobile*/
-section:empty {
-  background-color: #17284B;
-  width: 100%;
-  height: 20px;
-}
-  #homepageslogan {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F2F2F2;
-    color: #17284B;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 3px;
-    line-height: 20px;
-    padding: 5px;
-    margin-top: 15px;
-  }
 footer {
     background-color: #17284B;
     color: #F2F2F2;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
  }
-@media screen and (max-width: 425px) {
-  footer {
-    font-size: 10.5px;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
-  .col-4 {
-    margin: 10px;
-  }
-}
+ .rowfoot {
+  display:flex;
+ }
 .icon {
   margin-left: 5px;
   }
@@ -218,16 +209,16 @@ footer {
   transition-duration: 500ms;
 }
 .toggle-button .bar:nth-child(1){
-  top:0px;
+  top:-6px;
   left: 0px;
 }
 .toggle-button .bar:nth-child(2){
-  top:11px;
+  top:5px;
   left: 0px;
   opacity:1;
 }
 .toggle-button .bar:nth-child(3){
-  bottom:0px;
+  bottom:6px;
   left: 0px;
 }
 .toggle-button.open .bar:nth-child(1){
@@ -241,9 +232,67 @@ footer {
   transform: rotate(-45deg);
   top: 13px;
 }
+}
 /*end hamburger animation code*/
- }
+@media screen and (max-width: 425px) {
+  .rowfoot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+}
+/*start homepage code for small devices*/
+@media screen and (max-width: 600px) {
+.bg1 {
+   /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/terrazza_2rid.jpg");
 
+
+  /* Set a specific height */
+  height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .slogan{
+    font-family: 'Cinzel', san-serif;
+    color: #F2F2F2;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  .linea-blu {
+    width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 25px;
+}
+.home_container {
+  margin: 20px;
+}
+.home_row {
+  display: flex;
+  flex-direction: column;
+}
+.col-sm-4 {
+  width:100%;
+  height: auto;
+}
+
+.bg2 {
+  height: 110px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/0043 Moranoridsmdevice.jpg"); 
+  background-size: 100% 100%;
+  margin-bottom: 5px;
+}
+}
 /*Start chi siamo page code*/
 .main-timeline{ position: relative; }
 .main-timeline:before,
@@ -394,6 +443,7 @@ footer {
     font-size: 14px;
     color: #17284B;
     text-align: justify;
+    letter-spacing:1px;
 }
 .main-timeline .icon{
     width: 25px;
@@ -594,57 +644,146 @@ footer {
 /*end chi siamo page code*/
 
 /*start ristorante page code*/
-@media only screen and (min-width: 601px) {
-  .grid-containerbp {
-  display:none;
-  }
+.restaurant_container {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #F2F2F2;
-    padding: 0px;
-    margin: 30px;
-    font-family: "Montserrat", sans-serif;
-    color: #17284b;
-    column-gap: 20px;
+.parallax_restaurant {
+   /* The image used */
+  background-image: url("../photosmorano/0004 Moranorid169.jpg");
+
+  /* Set a specific height */
+  min-height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.des {
-  font-family: "Montserrat", sans-serif;
-    color: #17284b;
-    letter-spacing: 1.5px;
-    font-size: 13px;
+.parallax_restaurant1 {
+   /* The image used */
+  background-image: url("../photosmorano/0011 Moranorid169.jpg");
+
+  /* Set a specific height */
+  min-height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.img-ris {
-  border: solid 3px #17284b;
+.parallax_restaurant2 {
+   /* The image used */
+  background-image: url("../photosmorano/salainterna_1.169.jpg");
+
+  /* Set a specific height */
+  min-height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .restaurant_container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.parallax_restaurant {
+   /* The image used */
+  background-image: url("../photosmorano/0004 Moranorid169.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_restaurant1 {
+   /* The image used */
+  background-image: url("../photosmorano/0011 Moranorid169.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax_restaurant2 {
+   /* The image used */
+  background-image: url("../photosmorano/salainterna_1.169.jpg");
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
+}
 }
 
-@media only screen and (max-width: 600px) {
-  .grid-container {
-    display:none;
-  }
-  .parallax img {
-    height: 300px;
-    width: 100%;
-  }
-  .parallax1 img {
-    height: 300px;
-    width: 100%;
-  }
-  .parallax2 img{
-   height: 300px;
-    width: 100%;
-  }
-  .description {
-    text-align: center;
-    padding: 10px;
-    font-family: 'Montserrat';
-    font-size: 13px;
-  }
-}
 /*end ristorante page code*/
 
 /*start menu page code*/
+
+.taste {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #17284B;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+.menu_linea-blu{
+  width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 0px;
+}
 .grid-container-menu .fish {
     display: grid;
     grid-template-columns: auto auto;
@@ -666,6 +805,7 @@ footer {
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
 }
 .popup {
   position: relative;
@@ -706,7 +846,31 @@ footer {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+.grid-container-menu .wine {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin: 0px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
+}
+.cantina {
+  float: right;
+}
+.pizza {
+  padding:30px;
+  padding-top: 0px;
+  margin-left:30px;
+  margin-right:30px;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+}
 @media only screen and (max-width: 600px) {
+  .taste {
+  text-align: center;
+  font-family: "Montserrat, sans-serif";
+  color: #17284B;
+  padding: 20px;
+}
   .grid-container-menu .meat {
     display: grid;
     grid-template-columns: auto;
@@ -723,10 +887,35 @@ footer {
     padding: 0px 10px 0px 10px;
     font-size: 13px;
   }
+  .grid-container-menu .wine {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+  }
+  .cantinaxs {
+    display: none;
+  }
+  #poggio {
+    font.size: 11.5px;
+  }
+  .pizza {
+    font-size: 13px;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+  }
 }
 /*end menu page code*/
 
 /*star gallery page code*/
+.gallery_linea-grigia{
+  width:100%;
+  background-color: #D9D9D9;
+  height: 1px;
+}
 .row > .column {
   padding: 0 8px;
 }
@@ -889,5 +1078,9 @@ img.hover-shadow {
   margin-bottom: 10px;
   }
 }
-
+/*style documentazione*/
+.documentazione {
+  margin:30px;
+  padding:100px;
+}
 
