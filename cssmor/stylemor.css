@@ -1097,4 +1097,10 @@ img.hover-shadow {
   margin:30px;
   padding:100px;
 }
+@media only screen and (max-width: 768px) {
+  .documentazione {
+  margin:30px;
+  padding:0px;
+}
+}
 
