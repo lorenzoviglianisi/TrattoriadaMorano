@@ -90,7 +90,7 @@ body {
    column-gap: 50px;
 }
 .col-sm-4 {
-  width:33.33333333%;
+  width:100%;
 }
 .bg2 {
   height: 200px;
@@ -110,9 +110,10 @@ footer {
  .rowfoot {
   padding: 20px;
   display: flex;
+  column-gap: 5px;
 }
  .colfoot-4 {
-  width: 33.33%;
+  width: 100%;
   float: left;
  }
  .sign_iva {
@@ -146,7 +147,8 @@ footer {
     font-size: 20px;
     padding-top: 25px;
     padding-bottom: 15px;
-    letter-spacing: 16px;
+    letter-spacing: 9px;
+    margin-left: 9px;
   }
 .navbar-links {
     display: none;
@@ -650,45 +652,6 @@ footer {
   padding-left: 100px;
   padding-right: 100px;
 }
-.parallax_restaurant {
-   /* The image used */
-  background-image: url("../photosmorano/0004 Moranorid169.jpg");
-
-  /* Set a specific height */
-  min-height: 250px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax_restaurant1 {
-   /* The image used */
-  background-image: url("../photosmorano/0011 Moranorid169.jpg");
-
-  /* Set a specific height */
-  min-height: 250px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax_restaurant2 {
-   /* The image used */
-  background-image: url("../photosmorano/salainterna_1.169.jpg");
-
-  /* Set a specific height */
-  min-height: 250px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .restaurant_description {
   font-family:'Montserrat', sans-serif;
   font-size: 15px;
@@ -708,44 +671,27 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
 }
-.parallax_restaurant {
-   /* The image used */
-  background-image: url("../photosmorano/0004 Moranorid169.jpg");
-
-  /* Set a specific height */
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.parallax_restaurant1 {
-   /* The image used */
-  background-image: url("../photosmorano/0011 Moranorid169.jpg");
-
-  /* Set a specific height */
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
 }
-.parallax_restaurant2 {
-   /* The image used */
-  background-image: url("../photosmorano/salainterna_1.169.jpg");
-
-  /* Set a specific height */
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+@media only screen and (max-width: 375px) {
+  .restaurant_container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .restaurant_description {
   font-family:'Montserrat', sans-serif;
@@ -839,7 +785,7 @@ footer {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #17284b transparent transparent transparent;
+  border-color: #17284B transparent transparent transparent;
 }
 .popup .show {
   visibility: visible;
@@ -899,7 +845,7 @@ footer {
     display: none;
   }
   #poggio {
-    font.size: 11.5px;
+    font-size: 11.5px;
   }
   .pizza {
     font-size: 13px;
